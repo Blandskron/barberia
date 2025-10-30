@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barber Landskron - Tu Barbería de Confianza</title>
+    
+    <!-- Script de Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Fuente Inter de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Aplicamos la fuente Inter y un fondo oscuro base */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111827; /* bg-gray-900 */
+            color: #F9FAFB; /* text-gray-100 */
+        }
+        /* Color personalizado para acentos */
+        .text-gold {
+            color: #FBBF24; /* text-amber-400 */
+        }
+        .bg-gold {
+            background-color: #FBBF24; /* bg-amber-400 */
+        }
+        .border-gold {
+            border-color: #FBBF24; /* border-amber-400 */
+        }
+        .hover-bg-gold-dark:hover {
+            background-color: #F59E0B; /* hover:bg-amber-500 */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ===== Header y Navegación ===== -->
+    <nav class="bg-gray-900/80 backdrop-blur-md sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo / Nombre de la Barbería -->
+                <a href="#" class="text-2xl font-bold text-gold">
+                    Barber Landskron
+                </a>
+                
+                <!-- Navegación de Escritorio -->
+                <div class="hidden sm:flex sm:space-x-8">
+                    <a href="#servicios" class="text-gray-300 hover:text-gold transition-colors duration-200">Servicios</a>
+                    <a href="#equipo" class="text-gray-300 hover:text-gold transition-colors duration-200">Equipo</a>
+                    <a href="#galeria" class="text-gray-300 hover:text-gold transition-colors duration-200">Galería</a>
+                    <a href="#contacto" class="text-gray-300 hover:text-gold transition-colors duration-200">Contacto</a>
+                </div>
+
+                <!-- Botón de Menú Móvil (opcional, sin JS por ahora) -->
+                <div class="sm:hidden">
+                    <button type="button" class="text-gray-300 hover:text-gold focus:outline-none">
+                        <!-- Icono de Menú (puedes añadir uno de SVG aquí) -->
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== Sección Hero (Principal) ===== -->
+    <header class="relative h-screen min-h-[600px] flex items-center justify-center text-center overflow-hidden">
+        <!-- Imagen de fondo de marcador de posición -->
+        <div class="absolute inset-0">
+            <img src="https://placehold.co/1920x1080/333/555?text=Foto+Principal+de+la+Barbería" 
+                 alt="Interior de la barbería Barber Landskron" 
+                 class="w-full h-full object-cover">
+            <!-- Capa oscura sobre la imagen -->
+            <div class="absolute inset-0 bg-black/60"></div>
+        </div>
+        
+        <!-- Contenido del Hero -->
+        <div class="relative z-10 p-4">
+            <h1 class="text-5xl md:text-7xl font-extrabold text-white drop-shadow-lg leading-tight">
+                BARBER LANDSKRON
+            </h1>
+            <p class="mt-4 text-xl md:text-2xl text-gold font-light drop-shadow-md">
+                Estilo y Precisión en Cada Corte
+            </p>
+            <a href="#contacto" 
+               class="mt-8 inline-block bg-gold text-gray-900 font-bold py-3 px-10 rounded-lg text-lg shadow-xl hover-bg-gold-dark transition-all duration-300 transform hover:scale-105">
+                Reserva tu Cita
+            </a>
+        </div>
+    </header>
+
+    <!-- ===== Sección de Servicios ===== -->
+    <section id="servicios" class="py-20 md:py-28 bg-gray-800">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gold">
+                Nuestros Servicios
+            </h2>
+            
+            <div class="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Lista de servicios -->
+                <div class="bg-gray-900 p-6 rounded-lg shadow-xl transition-transform duration-300 hover:scale-105">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl font-semibold text-white">Corte Adulto</h3>
+                        <span class="text-xl font-bold text-gold">$10.000</span>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-900 p-6 rounded-lg shadow-xl transition-transform duration-300 hover:scale-105">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl font-semibold text-white">Corte Niño</h3>
+                        <span class="text-xl font-bold text-gold">$5.000</span>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-900 p-6 rounded-lg shadow-xl transition-transform duration-300 hover:scale-105">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl font-semibold text-white">Perfilado de Barba</h3>
+                        <span class="text-xl font-bold text-gold">$5.000</span>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-900 p-6 rounded-lg shadow-xl transition-transform duration-300 hover:scale-105">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl font-semibold text-white">Diseño de Cejas</h3>
+                        <span class="text-xl font-bold text-gold">$1.000</span>
+                    </div>
+                </div>
+
+                <div class="bg-gray-900 p-6 rounded-lg shadow-xl transition-transform duration-300 hover:scale-105">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl font-semibold text-white">Corte + Barba</h3>
+                        <span class="text-xl font-bold text-gold">$13.000</span>
+                    </div>
+                </div>
+
+                <div class="bg-gray-900 p-6 rounded-lg shadow-xl transition-transform duration-300 hover:scale-105">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-xl font-semibold text-white">Afeitado Clásico</h3>
+                        <span class="text-xl font-bold text-gold">$7.000</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Sección de Equipo ===== -->
+    <section id="equipo" class="py-20 md:py-28 bg-gray-900">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gold">
+                Conoce a Nuestros Barberos
+            </h2>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-10 md:gap-12">
+                <!-- Barbero 1: Juan -->
+                <div class="text-center">
+                    <img src="https://placehold.co/400x400/555/eee?text=Foto+de+Juan" 
+                         alt="Barbero Juan"
+                         class="w-48 h-48 rounded-full mx-auto object-cover border-4 border-gold shadow-lg">
+                    <h3 class="mt-6 text-2xl font-semibold text-white">Juan</h3>
+                    <p class="text-lg text-gold">Maestro Barbero</p>
+                </div>
+                
+                <!-- Barbero 2: Pedro -->
+                <div class="text-center">
+                    <img src="https://placehold.co/400x400/555/eee?text=Foto+de+Pedro" 
+                         alt="Barbero Pedro"
+                         class="w-48 h-48 rounded-full mx-auto object-cover border-4 border-gold shadow-lg">
+                    <h3 class="mt-6 text-2xl font-semibold text-white">Pedro</h3>
+                    <p class="text-lg text-gold">Especialista en Barbas</p>
+                </div>
+                
+                <!-- Barbero 3: Diego -->
+                <div class="text-center">
+                    <img src="https://placehold.co/400x400/555/eee?text=Foto+de+Diego" 
+                         alt="Barbero Diego"
+                         class="w-48 h-48 rounded-full mx-auto object-cover border-4 border-gold shadow-lg">
+                    <h3 class="mt-6 text-2xl font-semibold text-white">Diego</h3>
+                    <p class="text-lg text-gold">Experto en Diseños</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Sección de Galería ===== -->
+    <section id="galeria" class="py-20 md:py-28 bg-gray-800">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gold">
+                Nuestra Galería
+            </h2>
+            
+            <!-- Aquí dejas los espacios para las fotos -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://placehold.co/600x400/444/888?text=Corte+Estilo+1" alt="Galería de corte 1" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110">
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://placehold.co/600x400/444/888?text=Diseño+Barba" alt="Galería de barba" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110">
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://placehold.co/600x400/444/888?text=Ambiente+Local" alt="Galería del local" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110">
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://placehold.co/600x400/444/888?text=Cliente+Feliz" alt="Galería de cliente" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110">
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://placehold.co/600x400/444/888?text=Corte+Niño" alt="Galería de corte 2" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110">
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://placehold.co/600x400/444/888?text=Afeitado" alt="Galería de afeitado" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110">
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://placehold.co/600x400/444/888?text=Detalle+Producto" alt="Galería de producto" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110">
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://placehold.co/600x400/444/888?text=Fachada+Local" alt="Galería de fachada" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Sección de Contacto y Ubicación ===== -->
+    <section id="contacto" class="py-20 md:py-28 bg-gray-900">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <!-- Información de Contacto -->
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gold">
+                        Visítanos
+                    </h2>
+                    <p class="text-lg text-gray-300 mb-6">
+                        Estamos listos para atenderte. Encuéntranos en nuestra dirección o llámanos para agendar tu hora.
+                    </p>
+                    
+                    <h3 class="text-xl font-semibold text-gold mb-2">Horario de Atención</h3>
+                    <ul class="text-gray-300 mb-6 space-y-1">
+                        <li>Lunes a Viernes: 10:00 - 20:00</li>
+                        <li>Sábado: 10:00 - 16:00</li>
+                        <li>Domingo: Cerrado</li>
+                    </ul>
+                    
+                    <h3 class="text-xl font-semibold text-gold mb-2">Ubicación y Teléfono</h3>
+                    <p class="text-gray-300 mb-2">Av. Siempre Viva 123, Landskron, Chile</p>
+                    <p class="text-gray-300">Teléfono / WhatsApp: +56 9 1234 5678</p>
+                </div>
+                
+                <!-- Marcador de posición del Mapa -->
+                <div class="rounded-lg overflow-hidden shadow-xl h-80 md:h-full">
+                    <img src="https://placehold.co/600x450/555/aaa?text=Ubicación+en+Google+Maps" 
+                         alt="Mapa de ubicación de Barber Landskron"
+                         class="w-full h-full object-cover">
+                    <!-- 
+                    NOTA: Aquí puedes pegar el código "iframe" de Google Maps cuando lo tengas.
+                    Reemplaza la <img> de arriba con el <iframe>.
+                    -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Footer ===== -->
+    <footer class="bg-gray-950 text-gray-400 py-10">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="#" class="hover:text-gold transition-colors">Instagram</a>
+                <a href="#" class="hover:text-gold transition-colors">Facebook</a>
+                <a href="#" class="hover:text-gold transition-colors">WhatsApp</a>
+            </div>
+            <p class="text-sm">
+                &copy; 2025 Barber Landskron. Todos los derechos reservados.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
